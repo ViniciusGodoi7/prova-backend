@@ -1,0 +1,540 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1756465984710
+  modified: 1756465984710
+  description: ""
+collection:
+  - name: Loja
+    meta:
+      id: fld_657e9cea6ccd44e98cafb0c0635cef25
+      created: 1757081185208
+      modified: 1758284372738
+      sortKey: -1757081185208
+      description: ""
+    children:
+      - name: pedidos
+        meta:
+          id: fld_d073ade59dc048e9811e5fe2adb71cba
+          created: 1757081234303
+          modified: 1758288557634
+          sortKey: -1757081234304
+          description: ""
+      - name: clientes
+        meta:
+          id: fld_dd707f2b5fc84f1997f7fd79df3dfb1c
+          created: 1757081281831
+          modified: 1758284395909
+          sortKey: -1757081281831
+          description: ""
+      - name: produtos
+        meta:
+          id: fld_41c4c8b2c95844faac1a8fe2b8f053ab
+          created: 1758290306007
+          modified: 1758290306007
+          sortKey: -1757081209756
+          description: ""
+  - name: Locadora
+    meta:
+      id: fld_f1d5562865724da6a9b39ab5d4ab1ae8
+      created: 1758893344680
+      modified: 1758893344680
+      sortKey: -1758893344680
+      description: ""
+  - name: Restaurante
+    meta:
+      id: fld_31293586a7584f81b8c8aebe4fb9d7dd
+      created: 1759519647056
+      modified: 1759519647056
+      sortKey: -1759519647056
+      description: ""
+  - name: Clinica
+    meta:
+      id: fld_ca4244ced6944a2bab95f8790177b343
+      created: 1762522118851
+      modified: 1762522118851
+      sortKey: -1762522118851
+      description: ""
+    children:
+      - name: Consultas
+        meta:
+          id: fld_9a1180c2b5d1413a950bc433083a2260
+          created: 1762522387777
+          modified: 1762522387777
+          sortKey: -1762522387777
+          description: ""
+      - name: Pacientes
+        meta:
+          id: fld_fe4b88eb2045475e89bc74fdc2ca8b79
+          created: 1762522406342
+          modified: 1762522406342
+          sortKey: -1762522406342
+          description: ""
+      - name: Usuarios
+        meta:
+          id: fld_13c48c90ffee4f16a668454dbd67d593
+          created: 1762522418418
+          modified: 1762522418418
+          sortKey: -1762522418418
+          description: ""
+  - name: Estúdio Musical
+    meta:
+      id: fld_2b65c3c8e3a24cba9c39f85103f9b8ae
+      created: 1763125793648
+      modified: 1763126046338
+      sortKey: -1763125793648
+      description: ""
+  - name: Cantina
+    meta:
+      id: fld_998f261a32194f8394910cca3935233c
+      created: 1764336867561
+      modified: 1764336867561
+      sortKey: -1764336867561
+      description: ""
+    children:
+      - name: Alunos
+        meta:
+          id: fld_57c2436ec063436e8b30ac1e7c176688
+          created: 1764337546983
+          modified: 1764337549829
+          sortKey: -1764337549802
+          description: ""
+        children:
+          - url: http://localhost:3000/aluno
+            name: Listar aluno
+            meta:
+              id: req_cb8a22afcace421bb1303e37f3bd5263
+              created: 1764337605920
+              modified: 1764337650289
+              isPrivate: false
+              description: ""
+              sortKey: -1764337615040
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/alunos
+            name: Criar aluno
+            meta:
+              id: req_93a08d421974477f8ed14e245226414e
+              created: 1764337718922
+              modified: 1764337791926
+              isPrivate: false
+              description: ""
+              sortKey: -1764337615240
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "nome": "Maria Silva",
+                  "serie": "8º ano",
+                  "turno": "Manhã"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/alunos
+            name: Atualizar aluno
+            meta:
+              id: req_7185c73fe505402eacc22cce4a23c5d1
+              created: 1764337822600
+              modified: 1764339142233
+              isPrivate: false
+              description: ""
+              sortKey: -1764337615340
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "id": 1,
+                  "nome": "João Souza",
+                  "idade": 17,
+                  "serie": "2º ano"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/alunos/1
+            name: Excluir aluno
+            meta:
+              id: req_1843357b24164f89b360a0abdc4295b0
+              created: 1764337895178
+              modified: 1764342517295
+              isPrivate: false
+              description: ""
+              sortKey: -1764337615440
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/aluno
+            name: Total gasto por aluno
+            meta:
+              id: req_3a69aa39084145daa76f0ead352f5bc4
+              created: 1764339209461
+              modified: 1764339245740
+              isPrivate: false
+              description: ""
+              sortKey: -1764337615540
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Lanche
+        meta:
+          id: fld_ab358553cb2e43cab6443a5021349a7f
+          created: 1764337979208
+          modified: 1764337987442
+          sortKey: -1764337549902
+          description: ""
+        children:
+          - url: http://localhost:3000/lanches/1
+            name: Excluir lanche
+            meta:
+              id: req_ee7c97be7a554ca2b234a2e2aec30414
+              created: 1764338090994
+              modified: 1764339408332
+              isPrivate: false
+              description: ""
+              sortKey: -1764338095719
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/lanches
+            name: Cadastrar lanche
+            meta:
+              id: req_2d8024ed81594ffda36b57934490cced
+              created: 1764338098199
+              modified: 1764339348859
+              isPrivate: false
+              description: ""
+              sortKey: -1764338095919
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                
+                {
+                  "nome": "Coxinha",
+                  "preco": 8.50
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/lanches
+            name: Atualizar lanche
+            meta:
+              id: req_0adf7b71c9964d3089883cb659b8855c
+              created: 1764338100634
+              modified: 1764339388495
+              isPrivate: false
+              description: ""
+              sortKey: -1764338095819
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                  "id": 1,
+                  "nome": "Coxinha Especial",
+                  "preco": 10.00
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/lanche
+            name: Listar lanche
+            meta:
+              id: req_1868cdf68eed4f8c9484d67df7a74b77
+              created: 1764338102264
+              modified: 1764338559762
+              isPrivate: false
+              description: ""
+              sortKey: -1764338096019
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/lanche/faturamento
+            name: Total faturado
+            meta:
+              id: req_aecbe8bb847646ea84aab660de43de96
+              created: 1764339424087
+              modified: 1764342451727
+              isPrivate: false
+              description: ""
+              sortKey: -1764338096119
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Pedidos
+        meta:
+          id: fld_bfdf708505554f51a5acc54010f9102a
+          created: 1764339501219
+          modified: 1764339503848
+          sortKey: -1764337550002
+          description: ""
+        children:
+          - url: http://localhost:3000/pedido
+            name: Listar pedidos
+            meta:
+              id: req_87c4e479367244f7957014a396c82991
+              created: 1764339512576
+              modified: 1764339621148
+              isPrivate: false
+              description: ""
+              sortKey: -1764339527402
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/pedidos
+            name: Atualizar pedido
+            meta:
+              id: req_386c09fffe534bda8151a2566df6afaa
+              created: 1764339514354
+              modified: 1764339654380
+              isPrivate: false
+              description: ""
+              sortKey: -1764339527352
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |
+                {
+                  "id": 1,
+                  "id_aluno": 1,
+                  "id_lanche": 2,
+                  "quantidade": 3
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/pedidos/2
+            name: Excluir pedido
+            meta:
+              id: req_57a6f2d51de64311bfe882f63ae782d0
+              created: 1764339517736
+              modified: 1764339703631
+              isPrivate: false
+              description: ""
+              sortKey: -1764339527252
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/pedidos
+            name: Cadastrar pedido
+            meta:
+              id: req_c027bfda8deb499a85d45b5cc1e90abc
+              created: 1764339520459
+              modified: 1764339595563
+              isPrivate: false
+              description: ""
+              sortKey: -1764339527452
+            method: POST
+            body:
+              mimeType: application/json
+              text: |
+                {
+                  "id_aluno": 1,
+                  "id_lanche": 3,
+                  "quantidade": 2
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/pedido/produto
+            name: Total por produto
+            meta:
+              id: req_9ccd9e3c243140afaf2d5b1a6bc9a070
+              created: 1764339523277
+              modified: 1764342385441
+              isPrivate: false
+              description: ""
+              sortKey: -1764339527152
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.1.0
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1756466004265
+    modified: 1756466004265
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1756466004116
+    modified: 1756466004116
+    isPrivate: false
